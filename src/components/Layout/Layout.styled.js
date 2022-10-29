@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as Github } from "../../images/github.svg";
+
 
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-right: 20px;
   border-bottom: 3px solid #c0c0c0;
 `
@@ -54,11 +57,28 @@ export const LinkNav = styled(NavLink)`
   }
 
   &.active,
-  :hover  {
+  &:hover  {
     color: #0000ff;
 
     &::after {
       transform: scaleX(1);
     }
 }
+`;
+
+export const GithubLogo = styled(Github)`
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color var(--animation);
+
+  &.active,
+  &:hover {
+    background-color: #d1d1d1;
+  }
+`;
+
+export const Footer = styled.footer`
+  text-align: center;
+  padding: 6px 12px;
+  border-top: 3px solid #c0c0c0;
 `;
