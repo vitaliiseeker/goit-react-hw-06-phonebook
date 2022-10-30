@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Btn = styled.button`
-  margin-top: 15px;
-
   padding: 4px 8px;
   max-width: 200px;
 

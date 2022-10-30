@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-export const Text = styled.p`
+export const Wrap = styled.div`
+margin: 15px;
 padding: 15px;
-text-align: center;
+max-width: 540px;
+border: 1px solid #808080;
+border-radius: 10px;
 `;
