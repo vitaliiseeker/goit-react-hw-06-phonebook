@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-06-phonebook/static/css/main.13084898.css",
-    "main.js": "/goit-react-hw-06-phonebook/static/js/main.c9786521.js",
+    "main.css": "/goit-react-hw-06-phonebook/static/css/main.0d9b56f0.css",
+    "main.js": "/goit-react-hw-06-phonebook/static/js/main.debefe24.js",
+    "static/media/bg.jpg": "/goit-react-hw-06-phonebook/static/media/bg.dec42fc0c2d492604555.jpg",
+    "static/media/iconPhone.svg": "/goit-react-hw-06-phonebook/static/media/iconPhone.6f865e80563fd389c82d000740d3963c.svg",
+    "static/media/github.svg": "/goit-react-hw-06-phonebook/static/media/github.a43799d83b3297ffdd48b025dddb87cf.svg",
     "index.html": "/goit-react-hw-06-phonebook/index.html",
-    "main.13084898.css.map": "/goit-react-hw-06-phonebook/static/css/main.13084898.css.map",
-    "main.c9786521.js.map": "/goit-react-hw-06-phonebook/static/js/main.c9786521.js.map"
+    "main.0d9b56f0.css.map": "/goit-react-hw-06-phonebook/static/css/main.0d9b56f0.css.map",
+    "main.debefe24.js.map": "/goit-react-hw-06-phonebook/static/js/main.debefe24.js.map"
   },
   "entrypoints": [
-    "static/css/main.13084898.css",
-    "static/js/main.c9786521.js"
+    "static/css/main.0d9b56f0.css",
+    "static/js/main.debefe24.js"
   ]
 }
