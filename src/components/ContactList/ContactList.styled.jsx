@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ReactComponent as IconSvg } from "../../images/iconPhone.svg";
 
 export const Wrap = styled.div`
 
@@ -13,19 +14,33 @@ border-radius: 6px;
 export const Item = styled.li`
 display: flex;
 align-items: center;
-gap:8px;
+gap: 8px;
 padding: 5px;
-max-width: 350px;
 `;
 
 export const Name = styled.span`
-width: 210px;
-font-size: 16px;
+/* width: 180px; */
+`;
+
+export const Number = styled.span`
+/* width: 120px; */
+margin-right: 15px;
 `;
 
 export const Link = styled.a`
 position: relative;
-margin-right: 10px;
 text-decoration: none;
 color: inherit;
+`;
+
+export const IconSvgLink = styled(IconSvg)`
+fill: #2DC100;
+transition-property: transform, fill;
+transition: var(--animation);
+
+&:hover,
+&:focus {
+  transform: scale(1.1);
+  fill: #008000;
+}
 `;

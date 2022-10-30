@@ -10,7 +10,7 @@ export const TotalNumberContacts = ({ value }) => (
         <Total>{value}</Total>contacts
       </Text>
       :
-      <Text>There are no contacts in the phone contact.</Text>}
+      <Text>There are no entries in the phone book of contacts.</Text>}
   </>
 )
 

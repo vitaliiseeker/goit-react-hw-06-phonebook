@@ -1,12 +1,12 @@
 import React from 'react';
+import Avatar from "react-avatar";
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts, selectFilter } from 'redux/contacts/contactsSelectors';
 import { deleteContact } from 'redux/contacts/contactsSlice';
 import { Button } from '../Button/Button';
 import { TotalNumberContacts } from "../../components/TotalNumberContacts/TotalNumberContacts";
 import { Filter } from "../../components/Filter/Filter";
-import { ReactComponent as IconSvg } from "../../images/iconPhone.svg";
-import { Wrap, Item, Name, Link } from "./ContactList.styled";
+import { Wrap, Item, Name, Number, Link, IconSvgLink } from "./ContactList.styled";
 
 export const ContactList = () => {
 
@@ -30,12 +30,15 @@ export const ContactList = () => {
         <ul>
           {filteredContacts.map(({ id, name, number }) =>
             <Item key={id}>
-              <Name>🧑 {name + ":  " + number}</Name>
+              {/* <Name>🧑 {name + ":  " + number}</Name> */}
+              <Avatar round={true} size={25} name={name} />
+              <Name>{name}</Name>
               <Link
                 href={"tel: " + number}
                 type="tel">
-                <IconSvg width="25" height="25" />
+                <IconSvgLink width="25" height="25" />
               </Link>
+              <Number>{number}</Number>
               <Button
                 type="button"
                 onClick={() => dispatch(deleteContact(id))}
