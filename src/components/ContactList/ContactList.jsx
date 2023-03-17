@@ -1,12 +1,12 @@
 import React from 'react';
-import Avatar from "react-avatar";
+// import Avatar from "react-avatar";
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts, selectFilter } from 'redux/contacts/contactsSelectors';
 import { deleteContact } from 'redux/contacts/contactsSlice';
 import { Button } from '../Button/Button';
 import { TotalNumberContacts } from "../../components/TotalNumberContacts/TotalNumberContacts";
 import { Filter } from "../../components/Filter/Filter";
-import { Wrap, Item, Name, Number, Link, IconSvgLink } from "./ContactList.styled";
+import { Wrap, Item, Avatarstyled, Name, Number, Link, IconSvgLink } from "./ContactList.styled";
 
 export const ContactList = () => {
 
@@ -31,7 +31,7 @@ export const ContactList = () => {
           {filteredContacts.map(({ id, name, number }) =>
             <Item key={id}>
               {/* <Name>🧑 {name + ":  " + number}</Name> */}
-              <Avatar round={true} size={25} name={name} />
+              <Avatarstyled round={true} size={25} name={name} />
               <Name>{name}</Name>
               <Link
                 href={"tel: " + number}

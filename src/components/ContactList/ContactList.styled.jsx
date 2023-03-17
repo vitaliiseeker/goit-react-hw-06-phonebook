@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { ReactComponent as IconSvg } from "../../images/iconPhone.svg";
+import Avatar from "react-avatar";
 
 export const Wrap = styled.div`
-
 padding: 5px;
 /* max-width: 600px; */
 
@@ -44,3 +44,16 @@ transition: var(--animation);
   fill: #008000;
 }
 `;
+
+export const Avatarstyled = styled(Avatar)`
+cursor: pointer;
+transition-property: transform;
+transition: var(--animation);
+
+&:hover,
+&:focus {
+  transform: scale(1.1);
+}
+`;
+
+
